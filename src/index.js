@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClockWithProps from './clockWithProps';
+import ClockClass from './clockWithClass';
 
 function Clock() {
   return (
@@ -13,8 +14,9 @@ function Clock() {
 function App() {
   return (
     <div>
-      <Clock />
-      <ClockWithProps date = {new Date()} />
+      <Clock /> <hr />
+      <ClockWithProps date = {new Date()} /> <hr />
+      <ClockClass />
     </div>
   );
 }
